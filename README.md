@@ -78,6 +78,12 @@ kops create cluster \
 ```sh
 kops update cluster --yes
 ```
+You can export KOPS_STATE_STORE=s3://clusters.dev.example.com and then kops will use this location by default. We suggest putting this in your bash profile or similar
+
+```sh
+KOPS_STATE_STORE=s3://<s3-bucket-name-of cluster>
+```
+
 Above command may take some time to create the required infrastructure resources on AWS. Execute the validate command to check its status and wait until the cluster becomes ready
 
 ```sh
