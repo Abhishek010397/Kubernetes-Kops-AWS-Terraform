@@ -71,6 +71,7 @@ kops create cluster \
 --name=${KOPS_CLUSTER_NAME} \
 --dns private \
 --master-count 1
+--networking calico
 ```
 
 ### 10. Create kubernetes cluster
