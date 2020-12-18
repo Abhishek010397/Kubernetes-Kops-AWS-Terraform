@@ -99,3 +99,6 @@ ssh admin@api.<master-name same as ROUTE53-name>
 # Destroy the kubernetes cluster
 ```sh
 kops delete cluster  --yes
+```
+
+https://kops.sigs.k8s.io/getting_started/install/
